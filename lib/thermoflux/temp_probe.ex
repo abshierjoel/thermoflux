@@ -18,7 +18,7 @@ defmodule Thermoflux.TemperatureProbe do
 
     new_temps = Enum.map(thermostats, &Thermoflux.Ecobee.Thermostat.current_temp/1)
 
-    Process.send_after(self(), :probe_temp, 1_000)
+    Process.send_after(self(), :probe_temp, 5_000)
 
     {:noreply, %{state | temps: temps ++ new_temps}}
   end
