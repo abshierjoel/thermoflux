@@ -35,4 +35,6 @@ defmodule Thermoflux.Ecobee.Thermostat do
             thermostatRev: "220107130145",
             thermostatTime: "2022-01-07 09:39:04",
             utcTime: "2022-01-07 15:39:04"
+
+  def current_temp(%__MODULE__{runtime: %{rawTemperature: temp}}), do: temp
 end
