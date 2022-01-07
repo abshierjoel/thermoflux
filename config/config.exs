@@ -12,8 +12,9 @@ config :thermoflux, ThermofluxWeb.Endpoint,
   url: [host: "localhost"],
   render_errors: [view: ThermofluxWeb.ErrorView, accepts: ~w(html json), layout: false],
   pubsub_server: Thermoflux.PubSub,
-  live_view: [signing_salt: "64zaoLlh"],
-  ecobee_api_key: System.get_env("ECOBEE_API_KEY")
+  live_view: [signing_salt: "64zaoLlh"]
+
+config :thermoflux, ecobee_api_key: System.get_env("ECOBEE_API_KEY")
 
 config :tesla, :adapter, Tesla.Adapter.Hackney
 
