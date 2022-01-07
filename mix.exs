@@ -48,7 +48,8 @@ defmodule Thermoflux.MixProject do
       {:plug_cowboy, "~> 2.5"},
       {:tesla, "~> 1.4"},
       {:mix_test_watch, "~> 1.1", only: :dev, runtime: false},
-      {:hackney, "~> 1.17"}
+      {:hackney, "~> 1.17"},
+      {:instream, "~> 1.0"}
     ]
   end
 
