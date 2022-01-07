@@ -1,7 +1,7 @@
 defmodule Thermoflux.Ecobee.Thermostat do
   defstruct brand: "ecobee",
             features: "Home,HomeKit",
-            identifier: "521796359928",
+            identifier: "",
             isRegistered: true,
             lastModified: "2022-01-07 13:01:45",
             modelNumber: "vulcanSmart",
